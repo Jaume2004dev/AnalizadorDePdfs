@@ -82,9 +82,7 @@ namespace AnalizadorDivisiónDeAcometidas.Clases
                     var pos = palabra.BoundingBox;
                     string texto = palabra.Text.Trim();
                     float altura = (float)(pos.Top - pos.Bottom);
-                    float ancho =
-
- (float)(pos.Right - pos.Left);
+                    float ancho = (float)(pos.Right - pos.Left);
                     var posición = new Vector2((float)pos.Left, (float)pos.Bottom);
                     bool esNegrita = (palabra.FontName ?? "").Equals("CIDFont+F2");
                     string[] palabrasIgnoradas = { ":", "/", "-", "er", "or" };
